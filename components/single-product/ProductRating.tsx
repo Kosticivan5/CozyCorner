@@ -8,8 +8,9 @@ const ProductRating = ({ productId }: { productId: string }) => {
   const className = `flex gap-1 items-center text-md mt-1 mb-4`;
   const countValue = `(${count}) reviews`;
 
+  // remove key - vercel
   return (
-    <span className={className}>
+    <span key={productId} className={className}>
       <FaStar className="w-3,h-3" />
       {rating}
       {countValue}
