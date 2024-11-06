@@ -13,6 +13,7 @@ const ProductRating = ({ productId }: { productId: string }) => {
       <FaStar className="w-3,h-3" />
       {rating}
       {countValue}
+      {`productId ${productId}`}
     </span>
   );
 };
